@@ -2,6 +2,8 @@
 @import "../bower_components/typeplate-starter-kit/css/_typeplate.scss";
 @import "./mixins.scss";
 
+
+
 /**
  * BOX-SIZING
  */
@@ -120,13 +122,16 @@ body {
     background-position-y: 50%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-.side-left {
     left: 0;
     color: white;
     outline: 1px solid #47a3da;
 }
 .side-right {
+     background-image: url("../Images/StntClass.jpg");
+    background-position-x: 0%;
+    background-position-y: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     right: 0;
     color: white;
     outline: 1px solid #47a3da;
@@ -139,6 +144,7 @@ body {
     width: 50%;
     cursor: pointer;
     -webkit-transform: translateY(-50%) translateX(-50%);
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .intro-content h1 > span{
@@ -148,14 +154,17 @@ body {
 }
 .intro-content h1 > span:first-child {
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1em;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 .intro-content h1 > span:nth-child(2){
     position: relative;
-    margin-top: 0.5em;
+    margin-top: -0.5em;
     padding: 0.8em;
     text-transform: uppercase;
     letter-spacing: 1px;
-
+}
+#subtext {
+    font-size: 24px;
 }
 

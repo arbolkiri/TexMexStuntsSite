@@ -4,11 +4,12 @@
 Backbone.TxMxRouter = Backbone.Router.extend({
     initialize: function(){
         console.log('routerinitialized');
+        this.collection = new Backbone.ClassList();
         this.model = new Backbone.ClassModel();
         this.homeview = new Backbone.HomeView({
             model: this.model
         });
-        this.collection = new Backbone.ClassList();
+
         this.classview = new Backbone.ClassView();
         Backbone.history.start();
     },
@@ -55,16 +56,16 @@ Backbone.ClassList = Backbone.Collection.extend({
 
 Backbone.ClassView = Backbone.TemplateView.extend({
     el: ".container",
-    view: "stntClassView"
-    // events: {
-    //     "click #": "trainingViewPage"
-    // }
-    // trainingViewPage: function(event){
-    //     event.preventDefault();
-    //     var x = {
-    //         chvritbtn: this.el.querySelector("a[name='rightbtn']").value
-    //     }
-    // }
+    view: "stntClassView",
+    events: {
+        "click #viewClasses": "trainingViewPage"
+    },
+    trainingViewPage: function(event){
+        event.preventDefault();
+        console.log("hi");
+
+        // }
+    }
 })
 
 

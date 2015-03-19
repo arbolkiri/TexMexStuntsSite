@@ -168,13 +168,41 @@ body {
 #subtext {
     font-size: 24px;
 }
-.intro-content.left{
-    color: #9c1818;
+.fa-3x{
+    color: white;
+    display: block;
+
 }
-#stunt{
-    color: #9c1818;
+a{
+    text-decoration: none;
 }
-#training{
-    color: #9c1818;
+.fa-3x:hover{
+    opacity: 1;
+    color: #fe0001;
+    // -webkit-stroke-width: 20.3px;
+    // -webkit-stroke-color: white;
+    text-shadow: 1px 0px  20px red;
+
+}
+#classpage  {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: white;
+    & > h1{
+        color: white;
+        text-align: center;
+        margin-top: 75px;
+    }
+}
+.classpage-datetag{
+    display: flex;
+}
+.classpage-datetag-inner{
+    padding: 50px;
+}
+.classdetails{
+    padding: 50px;
+}
+.registrationbtn{
+    padding: 50px;
 }
 

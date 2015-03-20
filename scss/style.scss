@@ -145,6 +145,7 @@ body {
     width: 50%;
     cursor: pointer;
     -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
     font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -155,7 +156,7 @@ body {
 }
 .intro-content h1 > span:first-child {
     // font-weight: 300;
-    font-size: 1em;
+    font-size: .7em;
     font-family: Tahoma, Geneva, sans-serif;
 }
 .intro-content h1 > span:nth-child(2){
@@ -166,9 +167,9 @@ body {
     letter-spacing: 1px;
 }
 #subtext {
-    font-size: 24px;
+    font-size: 15px;
 }
-.fa-3x{
+.fa-2x{
     color: white;
     display: block;
 
@@ -176,7 +177,7 @@ body {
 a{
     text-decoration: none;
 }
-.fa-3x:hover{
+.fa-2x:hover{
     opacity: 1;
     color: #fe0001;
     // -webkit-stroke-width: 20.3px;
@@ -193,16 +194,75 @@ a{
         margin-top: 75px;
     }
 }
+.row {
+    position: relative;
+}
+.col {
+    margin: 0 0 0 200px;
+    padding-left: .7em;
+}
 .classpage-datetag{
     display: flex;
+    width: 100%;
+    color: black;
+    min-height: 500px;
+    margin: 40px 0 0 103px;
+    padding-left: 1.7em;
+    font-size: 16px;
+
+
 }
 .classpage-datetag-inner{
-    padding: 50px;
+    padding: 25px;
+    width: 250px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 .classdetails{
-    padding: 50px;
+    padding: 25px;
+    width: 550px;
+    background-color: white;
+    margin-right: 25px;
+    border-radius: 10px;
 }
 .registrationbtn{
-    padding: 50px;
+    padding: 25px;
+    width: 350px;
+    background-color:white;
+    border-radius: 10px;
 }
-
+.stntclassheader{
+    text-align: center;
+    margin-top: 50px;
+    border: solid;
+    border-radius: 10px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+#class-banner{
+        color: white;
+        font-size: 34px;
+        border-bottom: 12px solid #444444;
+        padding-top: 70px;
+}
+#classheadernav{
+    background-color: white;
+    color: grey;
+    font-size: 24px;
+    clear: both;
+    min-height: 70px;
+}
+.inlinelinks{
+    display: inline-block;
+    & li{
+        display: inline-block;
+        margin-right: 2px;
+        padding: 0 10px;
+    }
+}
+#classnavlinks{
+    float: left;
+}

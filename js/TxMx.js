@@ -19,6 +19,8 @@ Backbone.TxMxRouter = Backbone.Router.extend({
         "viewMark": "Mark",
         "viewClasses": "classes",
         "collection": "collection",
+        "righttransition": "rtransitions",
+        "lefttransition": "ltransitions",
         "*default": "homepage"
     },
     homepage: function(){
@@ -33,8 +35,13 @@ Backbone.TxMxRouter = Backbone.Router.extend({
     collection: function(){
         var self = this;
         this.collection.fetch();
+    },
+    rtransitions: function(){
+        this.rightside.render();
+    },
+    ltransitions: function(){
+        this.leftside.render();
     }
-
 })
 
 Backbone.HomeView = Backbone.TemplateView.extend({
@@ -67,6 +74,12 @@ Backbone.ClassView = Backbone.TemplateView.extend({
         // }
     }
 })
+
+  var splitlayout = document.getElementById('splitlayout');
+        this.leftside = splitlayout.querySelector('div.intro > div.side-left'),
+        this.rightside = splitlayout.querySelector('div.intro > div.side-right'),
+        this.leftpage = splitlayout.querySelector('div.page-left'),
+        this.rightpage = splitlayout.querySelector('div.page-right')
 
 
 

@@ -146,27 +146,33 @@ body {
     cursor: pointer;
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: Georgia, Times, Times New Roman, serif;
 }
 
-.intro-content h1 > span{
-    display: block;
-    white-space: nowrap;
-    color: white;
-}
-.intro-content h1 > span:first-child {
-    // font-weight: 300;
-    font-size: .7em;
-    font-family: Tahoma, Geneva, sans-serif;
-}
-.intro-content h1 > span:nth-child(2){
-    position: relative;
-    margin-top: -0.5em;
-    padding: 0.8em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+// .intro-content > span{
+//     display: block;
+//     white-space: nowrap;
+//     color: white;
+//     font-size: 50px;
+// }
+
+
+// .intro-content h1 > span:first-child {
+//     // font-weight: 300;
+//     font-size: .7em;
+//     font-family: Tahoma, Geneva, sans-serif;
+// }
+// .intro-content h1 > span:nth-child(2){
+//     position: relative;
+//     margin-top: -0.5em;
+//     padding: 0.8em;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+// }
 #subtext {
+    font-size: 15px;
+}
+#subtexttwo {
     font-size: 15px;
 }
 .fa-2x{
@@ -280,3 +286,91 @@ i#threeline-btn{
    -o-background-size: 100%;
     background-size: 100%;
  }
+  #markwarped {position: relative; display: block; width:341px; height:262px;}
+
+                     #markwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+                     -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+                     100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+
+                     #markwarped span{font-family:Georgia;font-size:38px;font-weight:regular;font-style:normal;
+                     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+                     #markwarped .w0 {-moz-transform: rotate(-0.85rad);-webkit-transform: rotate(-0.85rad);-o-transform:
+                     rotate(-0.85rad);-ms-transform: rotate(-0.85rad); transform: rotate(-0.85rad);
+                     width: 34px; height: 24px; left: 83.59px; top: 73.74px;}
+
+                     #markwarped .w1 {-moz-transform: rotate(-0.25rad);-webkit-transform: rotate(-0.25rad);-o-transform:
+                     rotate(-0.25rad);-ms-transform: rotate(-0.25rad); transform: rotate(-0.25rad);
+                     width: 27px; height: 24px; left: 132.24px; top: 46.57px;}
+
+                     #markwarped .w2 {-moz-transform: rotate(0.3rad);-webkit-transform: rotate(0.3rad);-o-transform:
+                     rotate(0.3rad);-ms-transform: rotate(0.3rad); transform: rotate(0.3rad);
+                     width: 25px; height: 24px; left: 181.6px; top: 48.22px;}
+
+                     #markwarped .w3 {-moz-transform: rotate(0.86rad);-webkit-transform: rotate(0.86rad);-o-transform:
+                     rotate(0.86rad);-ms-transform: rotate(0.86rad); transform: rotate(0.86rad);
+                     width: 27px; height: 24px; left: 220.94px; top: 74.93px;
+}
+#chavarriawarped {position: relative; display: block; width:348px; height:331px;}
+
+                     #chavarriawarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+                     -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+                     100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+
+                     #chavarriawarped span{font-family:Georgia;font-size:38px;font-weight:regular;font-style:normal;
+                     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+                     #chavarriawarped .w0 {-moz-transform: rotate(7.84rad);-webkit-transform: rotate(7.84rad);-o-transform:
+                     rotate(7.84rad);-ms-transform: rotate(7.84rad); transform: rotate(7.84rad);
+                     width: 0px; height: 24px; left: 24px; top: 130.98px;}
+
+                     #chavarriawarped .w1 {-moz-transform: rotate(7.6rad);-webkit-transform: rotate(7.6rad);-o-transform:
+                     rotate(7.6rad);-ms-transform: rotate(7.6rad); transform: rotate(7.6rad);
+                     width: 25px; height: 24px; left: 16.06px; top: 166.09px;}
+
+                     #chavarriawarped .w2 {-moz-transform: rotate(7.26rad);-webkit-transform: rotate(7.26rad);-o-transform:
+                     rotate(7.26rad);-ms-transform: rotate(7.26rad); transform: rotate(7.26rad);
+                     width: 27px; height: 24px; left: 34.97px; top: 210.61px;}
+
+                     #chavarriawarped .w3 {-moz-transform: rotate(6.91rad);-webkit-transform: rotate(6.91rad);-o-transform:
+                     rotate(6.91rad);-ms-transform: rotate(6.91rad); transform: rotate(6.91rad);
+                     width: 27px; height: 24px; left: 69.32px; top: 246.61px;}
+
+                     #chavarriawarped .w4 {-moz-transform: rotate(6.57rad);-webkit-transform: rotate(6.57rad);-o-transform:
+                     rotate(6.57rad);-ms-transform: rotate(6.57rad); transform: rotate(6.57rad);
+                     width: 27px; height: 24px; left: 113.81px; top: 268.87px;}
+
+                     #chavarriawarped .w5 {-moz-transform: rotate(6.22rad);-webkit-transform: rotate(6.22rad);-o-transform:
+                     rotate(6.22rad);-ms-transform: rotate(6.22rad); transform: rotate(6.22rad);
+                     width: 27px; height: 24px; left: 163.21px; top: 274.79px;}
+
+                     #chavarriawarped .w6 {-moz-transform: rotate(5.89rad);-webkit-transform: rotate(5.89rad);-o-transform:
+                     rotate(5.89rad);-ms-transform: rotate(5.89rad); transform: rotate(5.89rad);
+                     width: 25px; height: 24px; left: 211.78px; top: 264.04px;}
+
+                     #chavarriawarped .w7 {-moz-transform: rotate(5.56rad);-webkit-transform: rotate(5.56rad);-o-transform:
+                     rotate(5.56rad);-ms-transform: rotate(5.56rad); transform: rotate(5.56rad);
+                     width: 25px; height: 24px; left: 252.34px; top: 238.8px;}
+
+                     #chavarriawarped .w8 {-moz-transform: rotate(5.27rad);-webkit-transform: rotate(5.27rad);-o-transform:
+                     rotate(5.27rad);-ms-transform: rotate(5.27rad); transform: rotate(5.27rad);
+                     width: 13px; height: 24px; left: 285.43px; top: 206.89px;}
+
+                     #chavarriawarped .w9 {-moz-transform: rotate(4.97rad);-webkit-transform: rotate(4.97rad);-o-transform:
+                     rotate(4.97rad);-ms-transform: rotate(4.97rad); transform: rotate(4.97rad);
+                     width: 27px; height: 24px; left: 295.53px; top: 167.61px;}
+
+                     #chavarriawarped .w10 {-moz-transform: rotate(4.72rad);-webkit-transform: rotate(4.72rad);-o-transform:
+                     rotate(4.72rad);-ms-transform: rotate(4.72rad); transform: rotate(4.72rad);
+                     width: 0px; height: 24px; left: 313.99px; top: 131.54px;}
+
+                     #chavarriawarped .w11 {-moz-transform: rotate(4.56rad);-webkit-transform: rotate(4.56rad);-o-transform:
+                     rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
+                     width: 0px; height: 24px; left: 312.41px; top: 108.62px;
+}
+
+
+
+
+
+

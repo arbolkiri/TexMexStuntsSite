@@ -192,7 +192,7 @@ a{
        margin-top: 0;
        margin-bottom: 0;
       min-height: 950px;
-       background-color: rgba(0,129,250,0.7);
+       background-color: rgba(41,105,232,0.9);
         padding: 0;
 }
 .markpagemenu li{
@@ -214,7 +214,7 @@ i#threeline-btn{
     color: white;
 }
 .marknav-btn{
-   background-color: rgba(0,129,250,0.7);
+   background-color: rgba(41,105,232,0.9);
     // background-color: rgb(250,0,0.3);
 }
 .marknav-btn span{
@@ -228,10 +228,12 @@ i#threeline-btn{
     background-image: url("../Images/MarkAirKick.jpg");
     background-repeat: no-repeat;
     height: 100%;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    background-size: cover;
+    max-width: 1920px;
+    max-height: 1080px;
+   -webkit-background-size: 100%;
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+    background-size: 100%;
  }
  .menudivisions{
     color: white;
@@ -244,7 +246,7 @@ i#threeline-btn{
        margin-top: 0;
        margin-bottom: 0;
       min-height: 950px;
-       background-color: rgba(0,0,250,0.7);
+       background-color: rgba(45,39,193,0.9);
         padding: 0;
 }
 .trainingpagemenu li{
@@ -257,7 +259,7 @@ i#threeline-btn{
 }
 
 .trainingnav-btn{
-   background-color: rgba(0,0,250,0.7);
+   background-color: rgba(45,39,193,0.9);
     // background-color: rgb(250,0,0.3);
 }
 .trainingnav-btn span{
@@ -269,10 +271,12 @@ i#threeline-btn{
 }
 .traininglrgpageimage{
     background-image: url("../Images/StntClass.jpg");
-    background-repeat: no-repeat;
+      background-repeat: no-repeat;
     height: 100%;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    background-size: cover;
+    max-width: 1920px;
+    max-height: 1080px;
+   -webkit-background-size: 100%;
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+    background-size: 100%;
  }

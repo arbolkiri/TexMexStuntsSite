@@ -179,95 +179,11 @@ a{
 }
 .fa-2x:hover{
     opacity: 1;
-    color: #fe0001;
+    color: blue;
     // -webkit-stroke-width: 20.3px;
     // -webkit-stroke-color: white;
-    text-shadow: 1px 0px  20px red;
+    text-shadow: 1px 0px  20px #00ffff;
 
-}
-#classpage  {
-    font-family: Tahoma, Geneva, sans-serif;
-    color: white;
-    & > h1{
-        color: white;
-        text-align: center;
-        margin-top: 75px;
-    }
-}
-.row {
-    position: relative;
-}
-.col {
-
-    padding-left: 2em;
-}
-.classpage-datetag{
-    display: flex;
-    width: 976px;
-    color: black;
-    min-height: 300px;
-    margin: 40px 0 0 63px;
-    padding-left: 2.8em;
-    font-size: 16px;
-
-
-}
-.classpage-datetag-inner{
-    padding: 25px;
-    width: 159px;
-    background-color: white;
-    margin-right: 8px;
-    margin-left: 12px;
-    border-radius: 10px;
-}
-.classdetails{
-    padding: 25px;
-    width: 486px;
-    background-color: white;
-    margin-right: 25px;
-    border-radius: 10px;
-}
-.registrationbtn{
-    padding: 25px;
-    width: 285px;
-    background-color:white;
-    border-radius: 10px;
-}
-.stntclassheader{
-    text-align: center;
-    margin-top: 50px;
-    border: solid;
-    border-radius: 10px;
-    max-width: 958px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-}
-#class-banner{
-        color: white;
-        font-size: 34px;
-        border-bottom: 12px solid #444444;
-        padding-top: 70px;
-}
-#classheadernav{
-    background-color: white;
-    color: grey;
-    font-size: 24px;
-    clear: both;
-    min-height: 55px;
-}
-.inlinelinks{
-    display: inline-block;
-    & li{
-        display: inline-block;
-        margin-right: 2px;
-        padding: 0 10px;
-    }
-}
-#classnavlinks{
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 .markpagemenu ul{
         text-align: center;
@@ -275,8 +191,8 @@ a{
        letter-spacing: 1px;
        margin-top: 0;
        margin-bottom: 0;
-      min-height: 593px;
-       background-color: rgba(250,0,0,0.7);
+      min-height: 950px;
+       background-color: rgba(0,129,250,0.7);
         padding: 0;
 }
 .markpagemenu li{
@@ -298,7 +214,7 @@ i#threeline-btn{
     color: white;
 }
 .marknav-btn{
-   background-color: rgba(250,0,0,0.7);
+   background-color: rgba(0,129,250,0.7);
     // background-color: rgb(250,0,0.3);
 }
 .marknav-btn span{
@@ -310,6 +226,49 @@ i#threeline-btn{
 }
 .lrgpageimage{
     background-image: url("../Images/MarkAirKick.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+ }
+ .menudivisions{
+    color: white;
+    font-size: 35px;
+ }
+ .trainingpagemenu ul{
+        text-align: center;
+       list-style: none;
+       letter-spacing: 1px;
+       margin-top: 0;
+       margin-bottom: 0;
+      min-height: 950px;
+       background-color: rgba(0,0,250,0.7);
+        padding: 0;
+}
+.trainingpagemenu li{
+        font-size: 50px;
+        font-family: Tahoma, Geneva, sans-serif;
+        color: white;
+}
+#trainingli{
+    padding-top: 136px;
+}
+
+.trainingnav-btn{
+   background-color: rgba(0,0,250,0.7);
+    // background-color: rgb(250,0,0.3);
+}
+.trainingnav-btn span{
+    display: block;
+    width: 25px;
+    margin-left: 50px;
+    font-size: 2em;
+
+}
+.traininglrgpageimage{
+    background-image: url("../Images/StntClass.jpg");
     background-repeat: no-repeat;
     height: 100%;
    -webkit-background-size: cover;

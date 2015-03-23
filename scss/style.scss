@@ -182,12 +182,10 @@ body {
 .stuntcoordinator{
     transform: translateY(22px);
 }
-#subtext {
+.subtext {
     font-size: 17px;
 }
-#subtexttwo {
-    font-size: 15px;
-}
+
 .fa-2x{
     color: white;
     display: block;
@@ -381,7 +379,7 @@ i#threeline-btn{
                      rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
                      width: 0px; height: 24px; left: 312.41px; top: 108.62px;
 }
-  #trainingwarped {position: relative; display: block; width:348px;transform:translateY(-200px);}//height:331px
+  #trainingwarped {position: relative; display: block; width:348px;transform:translateY(-200px);padding-top: 213px;}//height:331px
 
                      #trainingwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
                      -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
@@ -438,7 +436,7 @@ i#threeline-btn{
                      rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
                      width: 0px; height: 24px; left: 312.41px; top: 108.62px;
 }
- #stuntwarped {position: relative; display: block; width:341px; height:103px;transform: translateY(-53px);}
+ #stuntwarped {position: relative; display: block; width:341px; height:103px;transform: translateY(37px);}
 
                      #stuntwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
                      -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%

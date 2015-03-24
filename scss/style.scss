@@ -252,14 +252,9 @@ i#threeline-btn{
    -o-background-size: 100%;
     background-size: 100%;
  }
- .menudivisions{
-    color: white;
-    font-size: 35px;
- }
  .trainingpagemenu ul{
         text-align: center;
        list-style: none;
-       letter-spacing: 1px;
        margin-top: 0;
        margin-bottom: 0;
       min-height: 950px;
@@ -267,8 +262,8 @@ i#threeline-btn{
         padding: 0;
 }
 .trainingpagemenu li{
-        font-size: 50px;
-        font-family: Tahoma, Geneva, sans-serif;
+        font-size:45px;
+        font-family: Georgia, Times, Times New Roman, serif;
         color: white;
 }
 #trainingli{
@@ -297,6 +292,45 @@ i#threeline-btn{
    -o-background-size: 100%;
     background-size: 100%;
  }
+.menusections{
+
+    font-size: 35px;
+ }
+section {
+        width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    color: black;
+ }
+ .storydiv h2{
+position: relative;
+width: 100%;
+margin: 0px 0px 58px 0px;
+font: 10px Tahoma, sans-serif;
+letter-spacing: 1px;
+ }
+ .wrapper h1 {
+    color: rgba(45,39,193,0.9);
+    position: relative;
+    float: left;
+    width: 239px;
+    font: 30px Georgia, Times, Times New Roman, serif;
+    margin-top: -6px;
+ }
+ @media screen {
+    .wrapper { max-width: 740px; padding: 60px 0px 100px 0px;}
+ }
+  @media screen {
+    .wrapper {max-width: 890px; width: 80%; overflow: hidden;}
+ }
+ .wrapper{
+    width: 890px;
+    margin: 0px auto;
+    padding: 60px 0px 180px 0px;
+    overflow: auto;
+ }
+
   #markwarped {position: relative; display: block; width:341px; height:103px; transform:translateX(-7px);}
 
                      #markwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;

@@ -29,7 +29,12 @@ function app(){
         // other stuff
         {url: "./bower_components/pace/pace.min.js"},
         {url: "./js/TemplateView.js"},
+        //  {url: "./js/google.js"},
         {url: "./js/TxMx.js"}
+        // {url: "./js/libs/async.js"},
+        // {url: "./js/plugins.js"},
+        // {url: "./js/main.js"}
+
     ).then(function(){
         // if turning on JSnoX, uncommment the following line
         // window.d = jsnox(React);
@@ -38,7 +43,12 @@ function app(){
 
         document.querySelector("html").style.opacity = 1;
         // start app?
-        new Backbone.TxMxRouter();
+        // new Backbone.TxMxRouter();
+        window.mapkey = "AIzaSyAbITj3aC4kXSAOc_2AocD_tS9qZkiRwWo";
+        new mapUser(mapkey);
+
+
+
     })
 
 }

@@ -7,47 +7,49 @@
 
 
     Backbone.TxMxRouter = Backbone.Router.extend({
-            initialize: function() {
-                console.log('routerinitialized');
-                this.collection = new Backbone.ClassList();
-                this.model = new Backbone.ClassModel();
-                this.sessionmodel = new Backbone.Session();
-                this.homeview = new Backbone.HomeView({
-                    model: this.model
-                });
-                this.markview = new Backbone.MarkMenuView();
-                this.classview = new Backbone.ClassView();
-                // this.stntmap = new Backbone.MapView({
-                //     model: this.sessionmodel
-                // });
+        initialize: function() {
+            console.log('routerinitialized');
+            this.collection = new Backbone.ClassList();
+            this.model = new Backbone.ClassModel();
+            this.sessionmodel = new Backbone.Session();
+            this.homeview = new Backbone.HomeView({
+                model: this.model
+            });
+            this.markview = new Backbone.MarkMenuView();
+            this.classview = new Backbone.ClassView();
+            // this.stntmap = new Backbone.MapView({
+            //     model: this.sessionmodel
+            // });
 
-                Backbone.history.start();
-            },
+            Backbone.history.start();
+        },
 
-            routes: {
+        routes: {
 
-                "viewMark": "Mark",
-                "viewClasses": "classes",
-                "collection": "collection",
-                "*default": "homepage"
-            },
-            homepage: function() {
-                this.homeview.render();
-            },
-            Mark: function() {
-                this.markview.render();
-            },
-            classes: function() {
-                this.classview.render();
-
-            },
-            collection: function() {
-                var self = this;
-                this.collection.fetch();
-            },
-            gmap: function() {
-                this.stntmap.render();
-            }
+            "viewMark": "Mark",
+            "viewClasses": "classes",
+            "collection": "collection",
+            "*default": "homepage"
+        },
+        homepage: function() {
+            this.homeview.render();
+        },
+        Mark: function() {
+            this.markview.render();
+        },
+        classes: function() {
+            var self = this
+            this.classview.render().then(function(){
+                self.classview.startGMaps()
+            })
+        },
+        collection: function() {
+            var self = this;
+            this.collection.fetch();
+        },
+        // gmap: function() {
+        //     this.stntmap.render();
+        // }
     })
 
 
@@ -76,10 +78,27 @@
         },
         trainingViewPage: function(event) {
             event.preventDefault();
-            console.log("hi");
+        },
+        startGMaps: function(){
+            console.log(document.querySelector('#map'))
+            this.map = new GMaps({
+                // div: ".stuntwrapper",
+                div: "#map",
+                lat: 29.934777,
+                lng: -95.579013,
+            })
 
-            // }
-        }
+                this.map.addMarker({
+                    lat: 29.934777,
+                    lng: -95.579013,
+                    title:"blah",
+
+                    click: function(e) {
+                        alert('You clicked in this marker');
+                    }
+                });
+            }
+
     })
 
     Backbone.Session = Backbone.Model.extend({
@@ -98,30 +117,24 @@
         },
         markMenuPage: function(event) {
             event.preventDefault();
-            console.log("introducingmark");
         }
+        // youtubeAPIready: function(){
+        //     player = new YT.Player('player', {
+
+        //     })
+        // }
+        // youtubeplayerready: function(){
+        //     player = new YT.Player('player', {
+        //         videoId: 'FKVbdVXcKs8'
+        //     });
+        //     document.getElementById('resume').onclick = function(){
+        //         player.playVideo();
+        //     };
+        //     document.getElementById('pause').onclick = function(){
+        //         player.pauseVideo();
+        //     }
+        // }
     })
-
-    // Backbone.MapView = Backbone.View.extend({
-    //     // el: "#map-canvas",
-    //     initialize: function() {
-    //         this.el = "#map-canvas",
-    //                  this.map = new GMaps ({
-    //                     div: ".stuntwrapper",
-    //                    lat: 29.934777,
-    //                     lng: -95.579013,
-    //                     markers: [{
-    //                         lat: 29.934777,
-    //                         lng: -95.579013,
-    //                         color: 'red'}]
-    //                 });
-    //                  Backbone.classview.bind('reset', this);
-    //             }
-
-    // })
-
-// })
-
 
 })(typeof module === "object" ? module.exports : window)
 

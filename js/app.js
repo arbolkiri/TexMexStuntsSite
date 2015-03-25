@@ -28,7 +28,7 @@ function app(){
 
         // other stuff
         {url: "./bower_components/pace/pace.min.js"},
-
+        {url: "./js/gmaps.js"},
         {url: "./js/TemplateView.js"},
         {url: "./js/TxMx.js"}
 
@@ -42,7 +42,9 @@ function app(){
         // start app?
         new Backbone.TxMxRouter();
 
+       // Parse.initialize("rVBofzAaRbD6E9EaoExVxLlNQVvyei5685EWsBfZ", "6d2tY7wuIJcYPoljQREE5XDUiKQGcXmjioO9LfSC");
 
+       //  new Parse.TxMxRouter();
 
 
     })

@@ -155,8 +155,8 @@ body {
 .intro-content.left{
     margin-top: 49px;
 }
-#map-canvas{
-    height: 100%;
+#map{
+    min-height: 209px;
     width: 100%;
 }
 // .intro-content > span{

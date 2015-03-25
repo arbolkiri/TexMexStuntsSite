@@ -118,7 +118,7 @@ body {
     background: rgba(0,0,0,0.3);
 }
 .side-left{
-    background-image: url("../Images/MarkAirKick.jpg");
+    background-image: url("../Images/MarkAirKick.png");
     background-position-x: 0%;
     background-position-y: 50%;
     background-size: 100% 100%;
@@ -155,7 +155,10 @@ body {
 .intro-content.left{
     margin-top: 49px;
 }
-
+#map-canvas{
+    height: 100%;
+    width: 100%;
+}
 // .intro-content > span{
 //     display: block;
 //     white-space: nowrap;
@@ -242,7 +245,7 @@ i#threeline-btn{
 
 }
 .lrgpageimage{
-    background-image: url("../Images/MarkAirKick.jpg");
+    background-image: url("../Images/MarkAirKick.png");
     background-repeat: no-repeat;
     height: 100%;
     max-width: 1920px;
@@ -330,6 +333,13 @@ letter-spacing: 1px;
     padding: 60px 0px 180px 0px;
     overflow: auto;
  }
+ .stuntwrapper{
+    width: 890px;
+    margin: 0px auto;
+    padding: 60px 0px 180px 0px;
+    overflow: auto;
+ }
+
 
   #markwarped {position: relative; display: block; width:341px; height:103px; transform:translateX(-7px);}
 

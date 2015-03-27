@@ -380,15 +380,14 @@ letter-spacing: 1px;
 .login-signupview{
     background-color: rgba(45,39,193,0.9);
      min-width: 700px;
-    min-height: 700px;
+    min-height: 735px;
 }
 .loginandsignup{
-    position:absolute;
+    position:relative;
     background-color:white;
-    margin: 55px 45px;
+    margin: auto;
     padding: 23px;
-    margin-left: auto;
-    margin-right: auto;
+    transform: translateY(14%);
     border: black;
     border: 10px;
     border-radius: 15px;

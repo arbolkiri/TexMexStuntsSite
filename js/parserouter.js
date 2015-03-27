@@ -6,12 +6,12 @@
             initialize: function() {
                 console.log("parserouterinit");
                 this.collection = new Parse.ClassList();
+                this.memberscollection = new Parse.UserCollection();
                 this.model = new Parse.ClassModel();
                 this.sessionmodel = new Parse.Session();
                 this.homeview = new Parse.HomeView({
                     model: this.model
                 });
-                this.usercollection = new Parse.userCollection();
                 this.markview = new Parse.MarkMenuView();
                 this.usermodel = new Parse.UserModel();
                 this.classview = new Parse.ClassView({
@@ -71,9 +71,9 @@
                 if (!this.isLoggedIn()) return;
                 var query = new Parse.Query(Parse.UserModel);
                 query.equalTo("user", this.user);
-                this.collection.query = query;
-                this.collection.fetch();
-                this.loginsignupview.render();
+                this.memberscollection.query = query;
+                this.memberscollection.fetch();
+                this.commentsview.render();
             },
             signuplogin: function() {
                 this.authview.render();
@@ -207,7 +207,7 @@
             }
         })
 
-        Parse.userCollection = Parse.Collection.extend({
+    Parse.UserCollection = Parse.Collection.extend({
             model: Parse.UserModel
         })
 
@@ -238,7 +238,7 @@
                 }
                 var result = Parse.User.logIn(data.username, data.password);
                 result.then(function() {
-                    window.location.hash = "#home";
+                    window.location.hash = "#homepage";
                 })
                 result.fail(function(err) {
                     alert(err.message);

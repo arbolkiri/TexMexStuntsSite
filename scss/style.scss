@@ -361,26 +361,45 @@ letter-spacing: 1px;
     overflow: auto;
  }
 .left-sideimg{
-   background-image: url("../Images/StntClass.jpg");
-    background-repeat: no-repeat;
+   // background-image: url("../Images/StntClass.jpg");
+   //  background-repeat: no-repeat;
+  background-color: rgba(45,39,193,0.9);
     height: 100%;
     max-width: 1920px;
     height: 1000px;
-   -webkit-background-size: 100%;
-   -moz-background-size: 100%;
-   -o-background-size: 100%;
-    background-size: cover;
+   // -webkit-background-size: 100%;
+   // -moz-background-size: 100%;
+   // -o-background-size: 100%;
+   //  background-size: cover;
 }
 .commentsfrommembers{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     background-color: white;
+    border-radius:4px 0 0 4px;
+    margin-left: 80px;
+    display: inline-block;
+    font:  Georgia, Times, Times New Roman, serif;
+}
+
+.comments{
+    position:relative;
+    margin: auto;
+    transform: translateY(50%);
+    padding: 10px;
+}
+.comment{
+    margin-left: 20px;
+}
+.commentheader{
+    text-align: center;
 }
 .login-signupview{
     background-color: rgba(45,39,193,0.9);
      min-width: 700px;
     min-height: 735px;
+
 }
 .loginandsignup{
     position:relative;
@@ -395,12 +414,34 @@ letter-spacing: 1px;
     box-shadow: 0 0 31px #00ffff;
     border-radius: 10px;
     text-align: center;
+    font:  Georgia, Times, Times New Roman, serif;
 }
 button {
     border-radius: 10px;
 }
 input {
     width: 30ch;
+}
+.lastUnit{
+    display:inline-block;
+    float: none;
+    width: auto;
+    transform: translateY(10px);
+}
+.attendee-section{
+    max-width: 232px;
+    height: 274px;
+    border-radius:0 4px 4px 0;
+    background-color: white;
+    transform: translateY(-144px);
+    font:  Georgia, Times, Times New Roman, serif;
+}
+.attendee-section h3{
+    font:  1.3em Georgia, Times, Times New Roman, serif;
+    text-align: center;
+}
+.attendee-section button{
+    margin-left: 25px;
 }
 
   #markwarped {position: relative; display: block; width:341px; height:103px; transform:translateX(-7px);}

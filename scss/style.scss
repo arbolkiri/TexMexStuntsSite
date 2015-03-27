@@ -93,6 +93,11 @@ body {
     width: 100%;
 }
 .side {
+     -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn 2s; /* Firefox < 16 */
+        -ms-animation: fadeIn 2s; /* Internet Explorer */
+         -o-animation: fadeIn 2s; /* Opera < 12.1 */
+            animation: fadeIn 2s;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -100,6 +105,10 @@ body {
     height: 100%;
     text-align: center;
     -webkit-backface-visibility: hidden;
+}
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 .overlay {
     position: absolute;
@@ -352,8 +361,8 @@ letter-spacing: 1px;
     overflow: auto;
  }
 .left-sideimg{
-background-image: url("../Images/StntClass.jpg");
-      background-repeat: no-repeat;
+   background-image: url("../Images/StntClass.jpg");
+    background-repeat: no-repeat;
     height: 100%;
     max-width: 1920px;
     height: 1000px;
@@ -367,6 +376,32 @@ background-image: url("../Images/StntClass.jpg");
     margin-right: auto;
     width: 70%;
     background-color: white;
+}
+.login-signupview{
+    background-color: rgba(45,39,193,0.9);
+     min-width: 700px;
+    min-height: 700px;
+}
+.loginandsignup{
+    position:absolute;
+    background-color:white;
+    margin: 55px 45px;
+    padding: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    border: black;
+    border: 10px;
+    border-radius: 15px;
+    width: 392px;
+    box-shadow: 0 0 31px #00ffff;
+    border-radius: 10px;
+    text-align: center;
+}
+button {
+    border-radius: 10px;
+}
+input {
+    width: 30ch;
 }
 
   #markwarped {position: relative; display: block; width:341px; height:103px; transform:translateX(-7px);}

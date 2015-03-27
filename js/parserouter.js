@@ -18,6 +18,8 @@
                     model: this.usermodel
                 });
                 this.commentsview = new Parse.CommentView();
+                this.authview = new Parse.AuthView({});
+                this.isLoggedIn();
 
 
                 Parse.history.start();
@@ -26,11 +28,10 @@
                 "viewMark": "Mark",
                 "viewClasses": "classes",
                 "collection": "collection",
-                "signup/login": "signuplogin",
+                "signuplogin": "signuplogin",
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
-                "default": "oops",
                 "*default": "homepage"
             },
             homepage: function() {
@@ -59,14 +60,14 @@
                 this.user = Parse.User.current();
 
                 if (!this.user) {
-                    this.navigate("login", {
+                    this.navigate("signuplogin", {
                         trigger: true
                     });
                     return false;
                 }
                 return true;
             },
-            oops: function() {
+            home: function() {
                 if (!this.isLoggedIn()) return;
                 var query = new Parse.Query(Parse.UserModel);
                 query.equalTo("user", this.user);
@@ -110,65 +111,9 @@
             view: "stntClassView",
             events: {
                 "click #viewClasses": "trainingViewPage",
-                "submit form.register": "register",
-                "submit form.login_signup": "login",
-                "click #comments": "signup"
             },
             trainingViewPage: function(event) {
                 event.preventDefault();
-            },
-            register: function(event) {
-                event.preventDefault();
-                var data = {
-                    username: this.el.querySelector(".register input[name='email']").value,
-                    password: this.el.querySelector(".register input[name='password']").value
-                }
-                var result = Parse.User.logIn(data.username, data.password);
-                result.then(function() {
-                    window.location.hash = "#home";
-                })
-                result.fail(function(err) {
-                    alert(err.message);
-                })
-            },
-            login: function(event) {
-                event.preventDefault();
-                var data = {
-                    username: this.el.querySelector(".login input[name='email']").value,
-                    password: this.el.querySelector(".login input[name='password']").value
-                }
-                var result = Parse.User.logIn(data.username, data.password);
-                result.then(function() {
-                    window.location.hash = "#comments"
-                })
-                result.fail(function(error) {
-                    alert(error.message);
-                })
-            },
-            signup: function(event) {
-                event.preventDefault();
-                var data = {
-                    username: this.el.querySelector(".register input[name='email']").value,
-                    password1: this.el.querySelector(".register input[name='password1']").value,
-                    password2: this.el.querySelector(".register input[name='password2']").value
-                }
-                if (data.password1 !== data.password2) {
-                    alert("Passwords must match");
-                    return;
-                }
-                var user = new Parse.User();
-                user.set('username', data.username);
-                user.set('email', data.username);
-                user.set('password', data.password1);
-
-                var result = user.signUp();
-                result.then(function(user) {
-                    window.location.hash = "#comments";
-                    alert("Welcome," + user.get("username"));
-                })
-                result.fail(function(err) {
-                    alert(err.message);
-                })
             },
             startGMaps: function() {
                 console.log(document.querySelector('#map'))
@@ -200,7 +145,7 @@
             }
         })
 
-        Parse.MarkMenuView = Parse.TemplateView.extend({
+    Parse.MarkMenuView = Parse.TemplateView.extend({
             el: ".container",
             view: "mark",
             markMenuPage: function(event) {
@@ -249,7 +194,7 @@
             }
         })
 
-        Parse.UserModel = Parse.Object.extend({
+    Parse.UserModel = Parse.Object.extend({
             className: "UserModel",
             defaults: {
                 "isRegistered": false,
@@ -266,7 +211,7 @@
             model: Parse.UserModel
         })
 
-        Parse.CommentView = Parse.TemplateView.extend({
+    Parse.CommentView = Parse.TemplateView.extend({
             el: ".container",
             view: "comments",
             events: {
@@ -275,5 +220,68 @@
             commentsViewPage: function(event) {
                     event.preventDefault();
                 }
+        })
+
+    Parse.AuthView = Parse.TemplateView.extend({
+            el: ".container",
+            view:"loginsignup",
+            events: {
+                "submit form.register": "register",
+                "submit form.login_signup": "login",
+                "submit form.signup": "signup"
+            },
+            register: function(event) {
+                event.preventDefault();
+                var data = {
+                    username: this.el.querySelector(".register input[name='email']").value,
+                    password: this.el.querySelector(".register input[name='password']").value
+                }
+                var result = Parse.User.logIn(data.username, data.password);
+                result.then(function() {
+                    window.location.hash = "#home";
                 })
-        })(typeof module === "object" ? module.exports : window)
+                result.fail(function(err) {
+                    alert(err.message);
+                })
+            },
+            login: function(event) {
+                event.preventDefault();
+                var data = {
+                    username: this.el.querySelector(".login input[name='email']").value,
+                    password: this.el.querySelector(".login input[name='password']").value
+                }
+                var result = Parse.User.logIn(data.username, data.password);
+                result.then(function() {
+                    window.location.hash = "#home"
+                })
+                result.fail(function(error) {
+                    alert(error.message);
+                })
+            },
+            signup: function(event) {
+               event.preventDefault();
+                var data = {
+                   username: this.el.querySelector(".register input[name='email']").value,
+                    password1: this.el.querySelector(".register input[name='password1']").value,
+                    password2: this.el.querySelector(".register input[name='password2']").value
+                }
+                if (data.password1 !== data.password2) {
+                    alert("Passwords must match");
+                    return;
+                }
+                var user = new Parse.User();
+                user.set('username', data.username);
+                user.set('email', data.username);
+                user.set('password', data.password1);
+
+                var result = user.signUp();
+                result.then(function(user) {
+                    window.location.hash = "#home";
+                    alert("Welcome," + user.get("username"));
+                 })
+        result.fail(function(err) {
+                    alert(err.message);
+                })
+            },
+        })
+})(typeof module === "object" ? module.exports : window)

@@ -2,7 +2,7 @@
 @import "../bower_components/typeplate-starter-kit/css/_typeplate.scss";
 @import "../bower_components/font-awesome-sass/assets/stylesheets/font-awesome.scss";
 @import "./mixins.scss";
-
+@import "./Imports/animate.scss";
 
 
 /**
@@ -159,6 +159,18 @@ body {
     min-height: 209px;
     width: 100%;
 }
+#youtubevideos{
+    min-height: 209px;
+    max-width: 300px;
+}
+#player{
+    max-height: 282px;
+    max-width: 500px;
+}
+.iframe{
+    max-width: 500px;
+}
+
 // .intro-content > span{
 //     display: block;
 //     white-space: nowrap;
@@ -339,7 +351,23 @@ letter-spacing: 1px;
     padding: 60px 0px 180px 0px;
     overflow: auto;
  }
-
+.left-sideimg{
+background-image: url("../Images/StntClass.jpg");
+      background-repeat: no-repeat;
+    height: 100%;
+    max-width: 1920px;
+    height: 1000px;
+   -webkit-background-size: 100%;
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+    background-size: cover;
+}
+.commentsfrommembers{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+}
 
   #markwarped {position: relative; display: block; width:341px; height:103px; transform:translateX(-7px);}
 

@@ -17,9 +17,9 @@ function app(){
         {url: "./bower_components/lodash/lodash.min.js"},
 
         // when using just Backbone, use this line
-        {url: "./bower_components/backbone/backbone.js"},
+        // {url: "./bower_components/backbone/backbone.js"},
         // when using Parse, comment out the above line and uncomment the line below
-        // {url: "./bower_components/parse-js-sdk/lib/parse.min.js"},
+        {url: "./bower_components/parse-js-sdk/lib/parse.min.js"},
 
 
         // when using React (and the plugin JSnoX), uncomment the following two lines
@@ -30,7 +30,8 @@ function app(){
         {url: "./bower_components/pace/pace.min.js"},
         {url: "./js/gmaps.js"},
         {url: "./js/TemplateView.js"},
-        {url: "./js/TxMx.js"}
+        {url: "./js/parserouter.js"}
+        // {url: "./js/TxMx.js"}
 
     ).then(function(){
         // if turning on JSnoX, uncommment the following line
@@ -40,11 +41,11 @@ function app(){
 
         document.querySelector("html").style.opacity = 1;
         // start app?
-        new Backbone.TxMxRouter();
+        // new Backbone.TxMxRouter();
 
-       // Parse.initialize("rVBofzAaRbD6E9EaoExVxLlNQVvyei5685EWsBfZ", "6d2tY7wuIJcYPoljQREE5XDUiKQGcXmjioO9LfSC");
+       Parse.initialize("2b3B1U3MryxknRsYTPC7CKZDWGK3XBTwcuT3ZUeY", "68dhp2aY7PxSrJvlV8d1EONBpAL2KSzguHUlvGWn");
 
-       //  new Parse.TxMxRouter();
+        new Parse.TxMexRouter();
 
 
     })

@@ -164,9 +164,17 @@ body {
 .intro-content.left{
     margin-top: 49px;
 }
+.map{
+     transform: translate(0px, 35px);
+}
 #map{
+    position: absolute;
     min-height: 209px;
-    width: 100%;
+    width: 350px;
+    display: inline-block;
+    width: 350px;
+    margin-top: 34px;
+
 }
 #youtubevideos{
     min-height: 209px;
@@ -328,6 +336,7 @@ section {
     color: black;
  }
  .storydiv h2{
+    color: #7A4400;
 position: relative;
 width: 100%;
 margin: 0px 0px 58px 0px;
@@ -354,11 +363,96 @@ letter-spacing: 1px;
     padding: 60px 0px 180px 0px;
     overflow: auto;
  }
+ .stuntwrapper h1{
+    color: rgba(45,39,193,0.9);
+    position: relative;
+    float: left;
+    width: 239px;
+    font: 30px Georgia, Times, Times New Roman, serif;
+    margin-top: -6px;
+ }
  .stuntwrapper{
     width: 890px;
     margin: 0px auto;
     padding: 60px 0px 180px 0px;
     overflow: auto;
+ }
+ p.locationtime{
+color: #7A4400;
+font: 20px Georgia, Times, Times New Roman, serif;
+ }
+
+ .empty{
+    width: 25px;
+    height: 75px;
+ }
+ .marker{
+    display: inline-block;
+    position: relative;
+    padding-top:35px;
+ }
+ .fa-map-marker{
+    color: #7A4400;
+    position: relative;
+    float: left;
+    width: 52px;
+ }
+p#fadate{
+    margin-left: 0px;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    float: left;
+    font: 20px Georgia, Times, Times New Roman, serif;
+}
+p#fatime{
+
+   position: relative;
+   font: 20px Georgia, Times, Times New Roman, serif;
+   width: 129px;
+   height: 28px;
+   margin-bottom: 42px;
+   margin-right: 0px;
+   margin-left: 42px;
+   margin-top: 0px;
+}
+p#faplace{
+    margin-left: 82px;
+}
+p#faaddress{
+    margin-left: 0px;
+    width: 490px;
+}
+p#faaddresscity{
+    margin-left: 52px;
+    width: 490px;
+}
+p.fadetails{
+  color: #7A4400;
+   font: 20px Georgia, Times, Times New Roman, serif;
+   width: 256px;
+   margin-left: 0px;
+   margin-bottom: 32px;
+}
+.fa-info-circle{
+    color: #7A4400;
+    position: relative;
+    float: left;
+    width: 52px;
+}
+ .fa-clock-o{
+   color: #7A4400;
+    position: relative;
+    float: left;
+    width: 52px;
+ }
+ #classregisterbtn{
+    background-color:rgba(45,39,193,0.9);
+    color:  white;
+    height: 35px;
+    font-size: 30px;
+    line-height: 30px;
+    display: inline-block;
+    transform: translate(465%, -190%);
  }
 .left-sideimg{
    // background-image: url("../Images/StntClass.jpg");

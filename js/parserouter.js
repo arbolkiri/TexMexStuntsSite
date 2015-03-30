@@ -32,7 +32,8 @@
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
-                "*default": "homepage"
+                // "stuntwrapper":"stuntwrapper",
+                "homepage": "homepage"
             },
             homepage: function() {
                 this.homeview.render();

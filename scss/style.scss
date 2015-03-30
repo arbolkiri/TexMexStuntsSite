@@ -170,9 +170,9 @@ body {
 #map{
     position: absolute;
     min-height: 209px;
-    width: 350px;
+    width: 450px;
     display: inline-block;
-    width: 350px;
+
     margin-top: 34px;
 
 }
@@ -252,6 +252,17 @@ a{
 #storyli{
     padding-top: 136px;
 }
+i#x{
+        height: 25px;
+    margin-top: 50px;
+    left: 35px;
+    width: 25px;
+    margin: 0 5px 0 5px;
+    z-index: 9999;
+    padding: 55px;
+    color: white;
+
+}
 i#threeline-btn{
     height: 25px;
     margin-top: 50px;
@@ -259,7 +270,15 @@ i#threeline-btn{
     width: 25px;
     margin: 0 5px 0 5px;
     z-index: 9999;
-    padding: 55px;
+    padding: 23px;
+    color: white;
+}
+// i#threelinebtnright{
+//     float: left;
+//     margin-top: 15px;
+//     margin-left: 15px;
+// }
+i.fa-times{
     color: white;
 }
 .marknav-btn{
@@ -282,7 +301,7 @@ i#threeline-btn{
    -webkit-background-size: 100%;
    -moz-background-size: 100%;
    -o-background-size: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
  }
  .trainingpagemenu ul{
         text-align: center;
@@ -300,6 +319,10 @@ i#threeline-btn{
 }
 #trainingli{
     padding-top: 136px;
+
+}
+.trainingmenulist a{
+    color: white;
 }
 
 .trainingnav-btn{
@@ -318,11 +341,11 @@ i#threeline-btn{
       background-repeat: no-repeat;
     height: 100%;
     max-width: 1920px;
-    max-height: 1080px;
+    max-height: 840px;
    -webkit-background-size: 100%;
    -moz-background-size: 100%;
    -o-background-size: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
  }
 .menusections{
 
@@ -335,6 +358,26 @@ section {
     background-color: white;
     color: black;
  }
+ .workshopdiv{
+       border: 10px solid ;
+    border-color: rgba(45,39,193,0.9);
+    margin: 15px;
+    max-width: 1232px;
+ }
+ .workshopdiv h2{
+    color: #7A4400;
+position: relative;
+width: 100%;
+margin: 0px 0px 58px 0px;
+font:  Tahoma, sans-serif;
+letter-spacing: 1px;
+ }
+ // .storydiv{
+ //    border: 10px solid ;
+ //    border-color: rgba(45,39,193,0.9);
+ //    margin: 15px;
+ //    max-width: 1232px;
+ // }
  .storydiv h2{
     color: #7A4400;
 position: relative;
@@ -367,16 +410,17 @@ letter-spacing: 1px;
     color: rgba(45,39,193,0.9);
     position: relative;
     float: left;
-    width: 239px;
+    width: 367px;
     font: 30px Georgia, Times, Times New Roman, serif;
     margin-top: -6px;
  }
  .stuntwrapper{
     width: 890px;
     margin: 0px auto;
-    padding: 60px 0px 180px 0px;
+    padding: 60px 0px 49px 0px;
     overflow: auto;
  }
+
  p.locationtime{
 color: #7A4400;
 font: 20px Georgia, Times, Times New Roman, serif;
@@ -420,6 +464,7 @@ p#faplace{
 }
 p#faaddress{
     margin-left: 0px;
+    transform: translateX(-5px);
     width: 490px;
 }
 p#faaddresscity{
@@ -430,8 +475,11 @@ p.fadetails{
   color: #7A4400;
    font: 20px Georgia, Times, Times New Roman, serif;
    width: 256px;
-   margin-left: 0px;
+   margin-left: 51px;
    margin-bottom: 32px;
+}
+#stagecombat{
+    margin-left: 83px;
 }
 .fa-info-circle{
     color: #7A4400;

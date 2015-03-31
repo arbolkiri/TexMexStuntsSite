@@ -32,7 +32,7 @@
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
-                // "stuntwrapper":"stuntwrapper",
+                "stuntwrapper":"stuntwrapper",
                 "homepage": "homepage"
             },
             homepage: function() {
@@ -112,8 +112,12 @@
             view: "stntClassView",
             events: {
                 "click #viewClasses": "trainingViewPage",
+                "click #stuntwrapper":"gotoworkshopdiv",
             },
             trainingViewPage: function(event) {
+                event.preventDefault();
+            },
+            gotoworkshopdiv: function(event){
                 event.preventDefault();
             },
             startGMaps: function() {

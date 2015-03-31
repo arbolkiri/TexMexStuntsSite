@@ -5,10 +5,8 @@
         Parse.TxMexRouter = Parse.Router.extend({
             initialize: function() {
                 console.log("parserouterinit");
-                this.collection = new Parse.ClassList();
-                this.memberscollection = new Parse.UserCollection();
+
                 this.model = new Parse.ClassModel();
-                this.sessionmodel = new Parse.Session();
                 this.homeview = new Parse.HomeView({
                     model: this.model
                 });
@@ -17,23 +15,30 @@
                 this.classview = new Parse.ClassView({
                     model: this.usermodel
                 });
+                this.authview = new Parse.AuthView();
                 this.commentsview = new Parse.CommentView();
-                this.authview = new Parse.AuthView({});
                 this.isLoggedIn();
-
+                this.collection = new Parse.ClassList();
+                this.memberscollection = new Parse.UserCollection();
+                this.memberscollection = new Parse.UserCollection();
+                this.sessionmodel = new Parse.Session();
 
                 Parse.history.start();
             },
             routes: {
                 "viewMark": "Mark",
                 "viewClasses": "classes",
+                "signupLogin": "signuplogin",
                 "collection": "collection",
-                "signuplogin": "signuplogin",
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
                 "stuntwrapper":"stuntwrapper",
-                "homepage": "homepage"
+                "traininggallerywrapper": "traininggallerywrapper",
+                "jointheconvwrapper":  "jointheconvwrapper",
+                "trainingcontactwrapper": "trainingcontactwrapper",
+                "*default": "homepage",
+
             },
             homepage: function() {
                 this.homeview.render();
@@ -50,6 +55,9 @@
                     self.classview.startGMaps()
                 })
             },
+             signuplogin: function() {
+                this.authview.render();
+            },
             comments: function() {
                 this.commentsview.render();
             },
@@ -61,7 +69,7 @@
                 this.user = Parse.User.current();
 
                 if (!this.user) {
-                    this.navigate("signuplogin", {
+                    this.navigate("signupLogin", {
                         trigger: true
                     });
                     return false;
@@ -76,9 +84,7 @@
                 this.memberscollection.fetch();
                 this.commentsview.render();
             },
-            signuplogin: function() {
-                this.authview.render();
-            },
+
             register: function() {
                 this.registerview.render();
             },
@@ -113,13 +119,29 @@
             events: {
                 "click #viewClasses": "trainingViewPage",
                 "click #stuntwrapper":"gotoworkshopdiv",
+                "click #traininggallerywrapper":"gototraininggallery",
+                "click #jointheconvwrapper": "gotojointheconv",
+                "clcik #trainingcontactwrapper": "gototraincontact",
             },
             trainingViewPage: function(event) {
+                event.preventDefault();
+            },
+              viewauth: function(event){
                 event.preventDefault();
             },
             gotoworkshopdiv: function(event){
                 event.preventDefault();
             },
+            gototraininggallery: function(event){
+                event.preventDefault();
+            },
+            gotojointheconv: function(event){
+                event.preventDefault();
+            },
+            gototraincontact: function(event){
+                event.preventDefault();
+            },
+
             startGMaps: function() {
                 console.log(document.querySelector('#map'))
                 this.map = new GMaps({
@@ -142,11 +164,11 @@
 
         })
 
-        Parse.Session = Parse.Object.extend({
+    Parse.Session = Parse.Object.extend({
             className: "Session",
             defaults: {
                 "signup": "false",
-                "login": "not logged in"
+                "login": "false"
             }
         })
 
@@ -231,10 +253,14 @@
             el: ".container",
             view:"loginsignup",
             events: {
+                // "click #signupLogin": "show",
                 "submit form.register": "register",
-                "submit form.login_signup": "login",
-                "submit form.signup": "signup"
+                // "submit form.login_signup": "login",
+                "submit form.signup": "signup",
             },
+            // show: function(event){
+            //     event.preventDefault();
+            // },
             register: function(event) {
                 event.preventDefault();
                 var data = {

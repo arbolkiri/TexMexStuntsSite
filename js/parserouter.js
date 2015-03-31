@@ -32,8 +32,8 @@
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
-                // "stuntwrapper":"stuntwrapper",
-                "homepage": "homepage"
+                "stuntwrapper":"stuntwrapper",
+                "*default": "homepage"
             },
             homepage: function() {
                 this.homeview.render();
@@ -91,7 +91,8 @@
 
         Parse.HomeView = Parse.TemplateView.extend({
             el: ".container",
-            view: "homepage"
+            view: "homepage",
+
         })
 
         Parse.ClassModel = Parse.Object.extend({
@@ -112,8 +113,12 @@
             view: "stntClassView",
             events: {
                 "click #viewClasses": "trainingViewPage",
+                "click #stuntwrapper": "gotoworkshopdiv"
             },
             trainingViewPage: function(event) {
+                event.preventDefault();
+            },
+            gotoworkshopdiv: function(event){
                 event.preventDefault();
             },
             startGMaps: function() {

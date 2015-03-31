@@ -31,7 +31,6 @@ function app(){
         {url: "./js/gmaps.js"},
         {url: "./js/TemplateView.js"},
         {url: "./js/parserouter.js"}
-        // {url: "./js/TxMx.js"}
 
     ).then(function(){
         // if turning on JSnoX, uncommment the following line
@@ -41,7 +40,7 @@ function app(){
 
         document.querySelector("html").style.opacity = 1;
         // start app?
-        // new Backbone.TxMxRouter();
+
 
        Parse.initialize("2b3B1U3MryxknRsYTPC7CKZDWGK3XBTwcuT3ZUeY", "68dhp2aY7PxSrJvlV8d1EONBpAL2KSzguHUlvGWn");
 

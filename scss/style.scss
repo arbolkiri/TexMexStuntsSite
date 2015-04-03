@@ -169,12 +169,12 @@ body {
      transform: translate(0px, 35px);
 }
 #map{
-    position: absolute;
+    position: relative;
     min-height: 209px;
     width: 450px;
-    display: inline-block;
+    display: block;
 
-    margin-top: 34px;
+    margin: auto auto;
 
 }
 #youtubevideos{
@@ -360,17 +360,17 @@ section {
     color: black;
  }
  .workshopdiv{
-       border: 10px solid ;
+       border: 1px solid ;
     border-color: rgba(45,39,193,0.9);
     margin: 15px;
     max-width: 1592px;
  }
  .workshopdiv h2{
-    color: #7A4400;
-position: relative;
+    color: #333;
+text-align: center;
 width: 100%;
-margin: 0px 0px 58px 0px;
-font:  Tahoma, sans-serif;
+margin: 7px 0px 2px 0px;
+font-family:   Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 letter-spacing: 1px;
  }
  .traininggallerydiv{
@@ -412,24 +412,33 @@ letter-spacing: 1px;
     padding: 60px 0px 180px 0px;
     overflow: auto;
  }
- .stuntwrapper h1{
-    color: rgba(45,39,193,0.9);
-    position: relative;
-    float: left;
-    width: 367px;
-    font: 30px Georgia, Times, Times New Roman, serif;
-    margin-top: -6px;
+#upcomingworkshops{
+    color: #333;
+    text-align: center;
+    width: 1222px;
+    font: 30px  Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;;
+
  }
  .stuntwrapper{
-    width: 890px;
-    margin: 0px auto;
-    padding: 60px 0px 49px 0px;
-    overflow: auto;
+    width: 1200px;
+    height: 500px;
+    margin: 0px 50px;
+
+
+ }
+ hr{
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   height: 2px;
+
+ }
+ hr.colored{
+    border-color: rgba(45,39,193,0.9);
  }
 
  p.locationtime{
-color: #7A4400;
-font: 20px Georgia, Times, Times New Roman, serif;
+color: #333;
+font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
  }
 
  .empty{
@@ -439,76 +448,100 @@ font: 20px Georgia, Times, Times New Roman, serif;
  .marker{
     display: inline-block;
     position: relative;
-    padding-top:35px;
+
  }
  .fa-map-marker{
-    color: #7A4400;
+    color: #333;
     position: relative;
-    float: left;
     width: 52px;
  }
-p#fadate{
-    margin-left: 0px;
-    margin-bottom: 3px;
-    margin-left: 30px;
-    float: left;
-    font: 20px Georgia, Times, Times New Roman, serif;
-}
-p#fatime{
+// p#fadate{
+//     margin-left: 0px;
+//     margin-bottom: 3px;
+//     margin-left: 30px;
+//     float: left;
+//     font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+// }
+// p#fatime{
 
-   position: relative;
-   font: 20px Georgia, Times, Times New Roman, serif;
-   width: 129px;
-   height: 28px;
-   margin-bottom: 42px;
-   margin-right: 0px;
-   margin-left: 42px;
-   margin-top: 0px;
-}
-p#faplace{
-    margin-left: 82px;
-}
-p#faaddress{
-    margin-left: 0px;
-    transform: translateX(-5px);
-    width: 490px;
-}
-p#faaddresscity{
-    margin-left: 52px;
-    width: 490px;
-}
+//    position: relative;
+//    font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+//    width: 129px;
+//    height: 28px;
+//    margin-bottom: 42px;
+//    margin-right: 0px;
+//    margin-left: 42px;
+//    margin-top: 0px;
+// }
+// p#faplace{
+//     margin-left: 82px;
+// }
+// p#faaddress{
+//     margin-left: 0px;
+//     transform: translateX(-5px);
+//     width: 490px;
+// }
+// p#faaddresscity{
+//     margin-left: 52px;
+//     width: 490px;
+// }
 p.fadetails{
-  color: #7A4400;
-   font: 20px Georgia, Times, Times New Roman, serif;
+  color: #333;
+   font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
    width: 256px;
    margin-left: 51px;
    margin-bottom: 32px;
 }
 #stagecombat{
-    margin-left: 83px;
+    margin-left: 68px;
 }
 .fa-info-circle{
-    color: #7A4400;
+    color: #333;
     position: relative;
-    float: left;
     width: 52px;
 }
- .fa-clock-o{
-   color: #7A4400;
+ #clock{
+   color: #333;
     position: relative;
-    float: left;
     width: 52px;
+    margin-left: 31px;
  }
+ #info{
+    margin-left: 60px;
+ }
+ #traininginfo{
+    text-align: center;
+    margin-left: 39px;
+ }
+ #trainingtime{
+    width: 324px;
+    transform: translateY(-53px);
+    text-align: center;
+ }
+#traininglocation{
+    width: 324px;
+    text-align: center;
+    transform: translateY(-30px);
+}
+#trainingdate{
+    margin-left: 25px;
+}
+#trainingregistrationbtn{
+    margin: auto auto;
+    width: 76px;
+    transform: translateY(-239px);
+}
  #classregisterbtn{
+    position: relative;
     background-color:rgba(45,39,193,0.9);
     color:  white;
     height: 35px;
     font-size: 30px;
     line-height: 30px;
-    display: inline-block;
-    transform: translate(465%, -190%);
+
  }
   .contactdiv{
+    background-attachment: fixed;
     color: whitesmoke;
     background-image: url("../Images/serenity-maidenhead-fight.jpg");
           background-repeat: no-repeat;
@@ -517,7 +550,7 @@ p.fadetails{
    -webkit-background-size: 100%;
    -moz-background-size: 100%;
    -o-background-size: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
  }
  #trainingcontactwrapper{
     margin-left: 85px;
@@ -552,22 +585,34 @@ p.fadetails{
 @keyframes bounceInUp{
 
 }
+.fa-phone-square{
+margin-left: 57px;
+}
 #contactmapmarker{
     color: whitesmoke;
+    margin-left: 50px;
+}
+.fa-envelope-o{
+    margin-left: 105px;
 }
 
 .call{
     display: inline-block;
     padding: 10px;
     margin-right: 160px;
+    font-size: 25px;
 }
 .email{
     display: inline-block;
     margin-right: 160px;
     margin-left: 80px;
+        font-size: 25px;
+
 }
 .cityofhouston{
     display: inline-block;
+        font-size: 25px;
+
 }
 .socialmedia{
     display: block;

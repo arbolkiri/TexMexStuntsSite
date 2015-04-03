@@ -33,7 +33,7 @@
                 "comments": "comments",
                 "register": "register",
                 "logout": "logout",
-                "stuntwrapper":"stuntwrapper",
+                "workshopdiv":"workshopdiv",
                 "traininggallerywrapper": "traininggallerywrapper",
                 "jointheconvwrapper":  "jointheconvwrapper",
                 "trainingcontactwrapper": "trainingcontactwrapper",
@@ -118,7 +118,7 @@
             view: "stntClassView",
             events: {
                 "click #viewClasses": "trainingViewPage",
-                "click #stuntwrapper":"gotoworkshopdiv",
+                "click #workshopdiv":"gotoworkshopdiv",
                 "click #traininggallerywrapper":"gototraininggallery",
                 "click #jointheconvwrapper": "gotojointheconv",
                 "clcik #trainingcontactwrapper": "gototraincontact",

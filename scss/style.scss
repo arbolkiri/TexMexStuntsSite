@@ -374,7 +374,7 @@ font-family:   Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 letter-spacing: 1px;
  }
  .traininggallerydiv{
-    background-image: url("../Images/Alicia Vela-Bailey Stunt.jpg");
+    background-image: url("../Images/combat2forHS[1].jpg");
           background-repeat: no-repeat;
           height: 451px;
           min-width: 700px;
@@ -383,6 +383,22 @@ letter-spacing: 1px;
    -moz-background-size: 100%;
    -o-background-size: 100%;
     background-size: 100% 100%;
+    background-attachment: fixed;
+ }
+ .traininggalleryborder{
+      position: absolute;
+  left: 0;
+  top: 55%;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 15%;
+  border: 3px solid #fff;
+  background: transparent;
+  opacity: 0.25;
+  z-index: 999;
  }
 .storydiv h2{
     color: #7A4400;
@@ -430,6 +446,7 @@ letter-spacing: 1px;
    border-top: 1px solid white;
    border-bottom: 1px solid white;
    height: 2px;
+   max-width: 400px;
 
  }
  hr.colored{
@@ -517,6 +534,7 @@ p.fadetails{
     width: 324px;
     transform: translateY(-53px);
     text-align: center;
+    margin-left: 46px;
  }
 #traininglocation{
     width: 324px;
@@ -543,7 +561,7 @@ p.fadetails{
   .contactdiv{
     background-attachment: fixed;
     color: whitesmoke;
-    background-image: url("../Images/serenity-maidenhead-fight.jpg");
+    background-image: url("../Images/Dawn-Planet-Apes_SF_apes_cop.jpg");
           background-repeat: no-repeat;
           min-width: 700px;
     height: 451px;

@@ -5,7 +5,7 @@
         </div>
         <div class="trainingpagemenu">
             <ul>
-                <li class="trainingmenulist" id="trainingli"><a href="#stuntwrapper">  UPCOMING WORKSHOPS</a></li>
+                <li class="trainingmenulist" id="trainingli"><a href="#workshopdiv">  UPCOMING WORKSHOPS</a></li>
               <!--   <li class="trainingmenulist"><a href="#traininggallerywrapper"> GALLERY</a></li> -->
                 <li class="trainingmenulist"><a href="#jointheconvwrapper"> JOIN THE CONVERSATION</a></li>
                 <li class="trainingmenulist"><a href="#trainingcontactwrapper"> CONTACT</a></li>
@@ -14,31 +14,35 @@
     </div>
 </div>
 <section class="menusections">
-    <section class="workshopdiv">
+    <section class="workshopdiv" id="workshopdiv">
         <div class="stuntwrapper" id="stuntwrapper">
             <h2> TEX MEX STUNTS</h2>
-            <h1>UPCOMING WORKSHOPS</h1>
-            <div class="empty"></div>
-            <div class="marker">
-                <i class="fa fa-info-circle"></i>
+            <hr class="colored">
+            <h1 id="upcomingworkshops">UPCOMING WORKSHOPS</h1>
+              <div class="marker" id="traininginfo">
+                <i class="fa fa-info-circle" id="info"></i>
                 <p class="fadetails" id="stagecombat">Stage Combat Training</p>
                 <p class="fadetails">$40 cash</p>
                 <p class="fadetails">$45 debit/credit card</p>
-                <p class="fadetails">*fees are paid in person</p>
-                <i class="fa fa-clock-o"> </i>
-                <p class="locationtime" id="fadate">April 1, 2015</p>
-                <p class="locationtime" id="fatime"> 4pm-6pm</p>
-                <div class="trainingtime">
-                    <i class="fa fa-map-marker"></i>
+                <p class="fadetails"><i>*fees are paid in person</i></p>
+              </div>
+              <div class="marker" id="trainingtime">
+                <i class="fa fa-clock-o" id="clock"> </i>
+                <p class="locationtime" id="trainingdate">April 1, 2015</p>
+                <p class="locationtime"> 4pm-6pm</p>
+              </div>
+              <div class="marker" id="traininglocation">
+                    <i class="fa fa-map-marker" ></i>
                     <p class="locationtime" id="faplace">4oz Fight Club </p>
                     <p class="locationtime" id="faaddress">10541 FM 1960 Rd W </p>
                     <p class="locationtime" id="faaddresscity">Houston, TX 77070</p>
-                </div>
+              </div>
+              <div id="map" class="map">
             </div>
-            <div id="map" class="map">
             </div>
 
-            <div>
+
+            <div id="trainingregistrationbtn">
                 <button id="classregisterbtn"><a class="register-btn"> Register</a></button>
                 </div>
         </div>
@@ -64,17 +68,17 @@
             <h1 id="trainingcontact">CONTACT </h1>
             <div class="call ">
             <i class="fa fa-phone-square bounceInUp"></i>
-            <span class="bounceInUp">832-276-4896</span>
+            <p class="bounceInUp">832-276-4896</p>
             </div>
 
             <div class="email bounceInUp">
-            <i class="fa fa-envelope-o "></i>
-            <span>mxmaxout@hotmail.com</span>
+            <i class="fa fa-envelope-o" id="contactemail"></i>
+            <p>mcmaxout@hotmail.com</p>
             </div>
 
             <div class="cityofhouston bounceInUp">
             <i class="fa fa-map-marker " id="contactmapmarker"></i>
-            Houston, TX
+            <p>Houston, TX</p>
             </div>
 
             <div class="socialmedia ">

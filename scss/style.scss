@@ -386,20 +386,24 @@ letter-spacing: 1px;
     background-attachment: fixed;
  }
  .traininggalleryborder{
-      position: absolute;
+      position: relative;
   left: 0;
-  top: 55%;
+  top: 5%;
   right: 0;
   bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 98%;
-  height: 15%;
+  width: 96%;
+  height: 87%;
   border: 3px solid #fff;
   background: transparent;
   opacity: 0.25;
   z-index: 999;
  }
+ #jointheconvwrapper{
+    min-height: 451px;
+}
+
 .storydiv h2{
     color: #7A4400;
 position: relative;
@@ -428,7 +432,7 @@ letter-spacing: 1px;
     padding: 60px 0px 180px 0px;
     overflow: auto;
  }
-#upcomingworkshops{
+.upcomingworkshops{
     color: #333;
     text-align: center;
     width: 1222px;
@@ -472,36 +476,7 @@ font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
     position: relative;
     width: 52px;
  }
-// p#fadate{
-//     margin-left: 0px;
-//     margin-bottom: 3px;
-//     margin-left: 30px;
-//     float: left;
-//     font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-// }
-// p#fatime{
 
-//    position: relative;
-//    font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-//    width: 129px;
-//    height: 28px;
-//    margin-bottom: 42px;
-//    margin-right: 0px;
-//    margin-left: 42px;
-//    margin-top: 0px;
-// }
-// p#faplace{
-//     margin-left: 82px;
-// }
-// p#faaddress{
-//     margin-left: 0px;
-//     transform: translateX(-5px);
-//     width: 490px;
-// }
-// p#faaddresscity{
-//     margin-left: 52px;
-//     width: 490px;
-// }
 p.fadetails{
   color: #333;
    font: 20px Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -807,6 +782,7 @@ input {
                      rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
                      width: 0px; height: 24px; left: 312.41px; top: 108.62px;
 }
+
   #trainingwarped {position: relative; display: block; width:348px;transform:translateY(-200px);padding-top: 213px;}//height:331px
 
                      #trainingwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;

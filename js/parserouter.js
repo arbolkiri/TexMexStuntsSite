@@ -15,10 +15,10 @@
                 this.classview = new Parse.ClassView({
                     model: this.usermodel
                 });
+                 this.isLoggedIn();
                 this.authview = new Parse.AuthView();
                 this.commentsview = new Parse.CommentView();
-                this.isLoggedIn();
-                this.collection = new Parse.ClassList();
+                               this.collection = new Parse.ClassList();
                 this.memberscollection = new Parse.UserCollection();
                 this.memberscollection = new Parse.UserCollection();
                 this.sessionmodel = new Parse.Session();
@@ -28,21 +28,20 @@
             routes: {
                 "viewMark": "Mark",
                 "viewClasses": "classes",
-                "signupLogin": "signuplogin",
+                 "signupLogin": "signuplogin",
+
                 "collection": "collection",
-                "comments": "comments",
-                "register": "register",
-                "logout": "logout",
                 "workshopdiv":"workshopdiv",
                 "traininggallerywrapper": "traininggallerywrapper",
                 "jointheconvwrapper":  "jointheconvwrapper",
                 "trainingcontactwrapper": "trainingcontactwrapper",
+                 "comments": "comments",
+                "register": "register",
+                "logout": "logout",
                 "*default": "homepage",
 
             },
-            homepage: function() {
-                this.homeview.render();
-            },
+
             Mark: function() {
                 var self = this
                 this.markview.render().then(function() {
@@ -84,7 +83,9 @@
                 this.memberscollection.fetch();
                 this.commentsview.render();
             },
-
+              homepage: function() {
+                this.homeview.render();
+            },
             register: function() {
                 this.registerview.render();
             },
@@ -92,7 +93,6 @@
                 Parse.User.logout();
                 this.isLoggedIn();
             }
-
         })
 
         Parse.HomeView = Parse.TemplateView.extend({
@@ -118,32 +118,12 @@
             view: "stntClassView",
             events: {
                 "click #viewClasses": "trainingViewPage",
-                "click #workshopdiv":"gotoworkshopdiv",
-                "click #traininggallerywrapper":"gototraininggallery",
-                "click #jointheconvwrapper": "gotojointheconv",
-                "clcik #trainingcontactwrapper": "gototraincontact",
             },
             trainingViewPage: function(event) {
                 event.preventDefault();
             },
-              viewauth: function(event){
-                event.preventDefault();
-            },
-            gotoworkshopdiv: function(event){
-                event.preventDefault();
-            },
-            gototraininggallery: function(event){
-                event.preventDefault();
-            },
-            gotojointheconv: function(event){
-                event.preventDefault();
-            },
-            gototraincontact: function(event){
-                event.preventDefault();
-            },
-
             startGMaps: function() {
-                console.log(document.querySelector('#map'))
+                // console.log(document.querySelector('#map'))
                 this.map = new GMaps({
                     // div: ".stuntwrapper",
                     div: "#map",
@@ -253,14 +233,13 @@
             el: ".container",
             view:"loginsignup",
             events: {
-                // "click #signupLogin": "show",
                 "submit form.register": "register",
                 // "submit form.login_signup": "login",
                 "submit form.signup": "signup",
             },
-            // show: function(event){
-            //     event.preventDefault();
-            // },
+            show: function(event){
+                event.preventDefault();
+            },
             register: function(event) {
                 event.preventDefault();
                 var data = {

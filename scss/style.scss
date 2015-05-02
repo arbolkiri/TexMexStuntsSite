@@ -304,44 +304,6 @@ i.fa-times{
    -o-background-size: 100%;
     background-size: 100% 100%;
  }
- .markheadshot{
-   content: url("../Images/mark-chavarria.jpg");
-    width: 300px;
-    margin-top: 36px;
-    margin-left: 43px;
- }
- .undowrapper{
-         border: 1px solid ;
-    border-color: rgba(45,39,193,0.9);
-    margin: 15px;
-    max-width: 1592px;
-    height: 801px;
- }
- .undowrapper h2{
-      color: #333;
-text-align: center;
-width: 100%;
-margin: 7px 0px 2px 0px;
-font-family:   Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-letter-spacing: 1px;
- }
- .markparagraphs{
-      float:right;
-    position: relative;
-    display: inline-block;
-    max-width: 766px;
-    margin-right: 53px;
-    font: 20px Roboto,Helvetica Neue,Helvetica,Arial,sans-serif
- }
- #pone{
-    transform: translateY(11%);
- }
- #ptwo{
-    transform: translateY(-112%);
- }
- #pthree{
-    transform: translateY(-70%);
- }
  .trainingpagemenu ul{
         text-align: center;
        list-style: none;
@@ -389,9 +351,6 @@ letter-spacing: 1px;
 .menusections{
 
     font-size: 35px;
- }
- .storydiv{
-    height: 846px;
  }
 section {
         width: 100%;
@@ -445,14 +404,14 @@ letter-spacing: 1px;
     min-height: 451px;
 }
 
-// .storydiv h2{
-//     color: #7A4400;
-// position: relative;
-// width: 100%;
-// margin: 0px 0px 58px 0px;
-// font: 10px Tahoma, sans-serif;
-// letter-spacing: 1px;
-//  }
+.storydiv h2{
+    color: #7A4400;
+position: relative;
+width: 100%;
+margin: 0px 0px 58px 0px;
+font: 10px Tahoma, sans-serif;
+letter-spacing: 1px;
+ }
 .wrapper h1 {
     color: rgba(45,39,193,0.9);
     position: relative;
@@ -826,61 +785,61 @@ input {
 
   #trainingwarped {position: relative; display: block; width:348px;transform:translateY(-200px);padding-top: 213px;}//height:331px
 
-                     // #trainingwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
-                     // -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
-                     // 100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+                     #trainingwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+                     -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+                     100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
 
-                     // #trainingwarped span{font-family:GEOrGIA;font-size:43px;font-weight:regular;font-style:normal;
-                     // line-height:0.2; white-space:pre; overflow:visible; padding:0px;}
+                     #trainingwarped span{font-family:GEOrGIA;font-size:43px;font-weight:regular;font-style:normal;
+                     line-height:0.2; white-space:pre; overflow:visible; padding:0px;}
 
-                     // #trainingwarped .w0 {-moz-transform: rotate(7.58rad);-webkit-transform: rotate(7.58rad);-o-transform:
-                     // rotate(7.58rad);-ms-transform: rotate(7.58rad); transform: rotate(7.58rad);
-                     // width: 0px; height: 24px; left: 29.36px; top: 169.09px;}
+                     #trainingwarped .w0 {-moz-transform: rotate(7.58rad);-webkit-transform: rotate(7.58rad);-o-transform:
+                     rotate(7.58rad);-ms-transform: rotate(7.58rad); transform: rotate(7.58rad);
+                     width: 0px; height: 24px; left: 29.36px; top: 169.09px;}
 
-                     // #trainingwarped .w1 {-moz-transform: rotate(7.34rad);-webkit-transform: rotate(7.34rad);-o-transform:
-                     // rotate(7.34rad);-ms-transform: rotate(7.34rad); transform: rotate(7.34rad);
-                     // width: 23px; height: 24px; left: 31.01px; top: 200.89px;}
+                     #trainingwarped .w1 {-moz-transform: rotate(7.34rad);-webkit-transform: rotate(7.34rad);-o-transform:
+                     rotate(7.34rad);-ms-transform: rotate(7.34rad); transform: rotate(7.34rad);
+                     width: 23px; height: 24px; left: 31.01px; top: 200.89px;}
 
-                     // #trainingwarped .w2 {-moz-transform: rotate(7.01rad);-webkit-transform: rotate(7.01rad);-o-transform:
-                     // rotate(7.01rad);-ms-transform: rotate(7.01rad); transform: rotate(7.01rad);
-                     // width: 25px; height: 24px; left: 59.18px; top: 237.49px;}
+                     #trainingwarped .w2 {-moz-transform: rotate(7.01rad);-webkit-transform: rotate(7.01rad);-o-transform:
+                     rotate(7.01rad);-ms-transform: rotate(7.01rad); transform: rotate(7.01rad);
+                     width: 25px; height: 24px; left: 59.18px; top: 237.49px;}
 
-                     // #trainingwarped .w3 {-moz-transform: rotate(6.68rad);-webkit-transform: rotate(6.68rad);-o-transform:
-                     // rotate(6.68rad);-ms-transform: rotate(6.68rad); transform: rotate(6.68rad);
-                     // width: 27px; height: 24px; left: 99.32px; top: 263.67px;}
+                     #trainingwarped .w3 {-moz-transform: rotate(6.68rad);-webkit-transform: rotate(6.68rad);-o-transform:
+                     rotate(6.68rad);-ms-transform: rotate(6.68rad); transform: rotate(6.68rad);
+                     width: 27px; height: 24px; left: 99.32px; top: 263.67px;}
 
-                     // #trainingwarped .w4 {-moz-transform: rotate(6.38rad);-webkit-transform: rotate(6.38rad);-o-transform:
-                     // rotate(6.38rad);-ms-transform: rotate(6.38rad); transform: rotate(6.38rad);
-                     // width: 13px; height: 24px; left: 147.84px; top: 274.25px;}
+                     #trainingwarped .w4 {-moz-transform: rotate(6.38rad);-webkit-transform: rotate(6.38rad);-o-transform:
+                     rotate(6.38rad);-ms-transform: rotate(6.38rad); transform: rotate(6.38rad);
+                     width: 13px; height: 24px; left: 147.84px; top: 274.25px;}
 
-                     // #trainingwarped .w5 {-moz-transform: rotate(6.08rad);-webkit-transform: rotate(6.08rad);-o-transform:
-                     // rotate(6.08rad);-ms-transform: rotate(6.08rad); transform: rotate(6.08rad);
-                     // width: 27px; height: 24px; left: 183.63px; top: 272.24px;}
+                     #trainingwarped .w5 {-moz-transform: rotate(6.08rad);-webkit-transform: rotate(6.08rad);-o-transform:
+                     rotate(6.08rad);-ms-transform: rotate(6.08rad); transform: rotate(6.08rad);
+                     width: 27px; height: 24px; left: 183.63px; top: 272.24px;}
 
-                     // #trainingwarped .w6 {-moz-transform: rotate(5.79rad);-webkit-transform: rotate(5.79rad);-o-transform:
-                     // rotate(5.79rad);-ms-transform: rotate(5.79rad); transform: rotate(5.79rad);
-                     // width: 13px; height: 24px; left: 230.97px; top: 257.81px;}
+                     #trainingwarped .w6 {-moz-transform: rotate(5.79rad);-webkit-transform: rotate(5.79rad);-o-transform:
+                     rotate(5.79rad);-ms-transform: rotate(5.79rad); transform: rotate(5.79rad);
+                     width: 13px; height: 24px; left: 230.97px; top: 257.81px;}
 
-                     // #trainingwarped .w7 {-moz-transform: rotate(5.49rad);-webkit-transform: rotate(5.49rad);-o-transform:
-                     // rotate(5.49rad);-ms-transform: rotate(5.49rad); transform: rotate(5.49rad);
-                     // width: 27px; height: 24px; left: 258.33px; top: 232.22px;}
+                     #trainingwarped .w7 {-moz-transform: rotate(5.49rad);-webkit-transform: rotate(5.49rad);-o-transform:
+                     rotate(5.49rad);-ms-transform: rotate(5.49rad); transform: rotate(5.49rad);
+                     width: 27px; height: 24px; left: 258.33px; top: 232.22px;}
 
-                     // #trainingwarped .w8 {-moz-transform: rotate(5.14rad);-webkit-transform: rotate(5.14rad);-o-transform:
-                     // rotate(5.14rad);-ms-transform: rotate(5.14rad); transform: rotate(5.14rad);
-                     // width: 27px; height: 24px; left: 286.83px; top: 191.44px;}
+                     #trainingwarped .w8 {-moz-transform: rotate(5.14rad);-webkit-transform: rotate(5.14rad);-o-transform:
+                     rotate(5.14rad);-ms-transform: rotate(5.14rad); transform: rotate(5.14rad);
+                     width: 27px; height: 24px; left: 286.83px; top: 191.44px;}
 
-                     // #trainingwarped .w9 {-moz-transform: rotate(4.89rad);-webkit-transform: rotate(4.89rad);-o-transform:
-                     // rotate(4.89rad);-ms-transform: rotate(4.89rad); transform: rotate(4.89rad);
-                     // width: 0px; height: 24px; left: 311.5px; top: 156.79px;}
+                     #trainingwarped .w9 {-moz-transform: rotate(4.89rad);-webkit-transform: rotate(4.89rad);-o-transform:
+                     rotate(4.89rad);-ms-transform: rotate(4.89rad); transform: rotate(4.89rad);
+                     width: 0px; height: 24px; left: 311.5px; top: 156.79px;}
 
-                     // #trainingwarped .w10 {-moz-transform: rotate(4.73rad);-webkit-transform: rotate(4.73rad);-o-transform:
-                     // rotate(4.73rad);-ms-transform: rotate(4.73rad); transform: rotate(4.73rad);
-                     // width: 0px; height: 24px; left: 313.94px; top: 133.94px;}
+                     #trainingwarped .w10 {-moz-transform: rotate(4.73rad);-webkit-transform: rotate(4.73rad);-o-transform:
+                     rotate(4.73rad);-ms-transform: rotate(4.73rad); transform: rotate(4.73rad);
+                     width: 0px; height: 24px; left: 313.94px; top: 133.94px;}
 
-                     // #trainingwarped .w11 {-moz-transform: rotate(4.56rad);-webkit-transform: rotate(4.56rad);-o-transform:
-                     // rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
-                     // width: 0px; height: 24px; left: 312.41px; top: 108.62px;
-// }
+                     #trainingwarped .w11 {-moz-transform: rotate(4.56rad);-webkit-transform: rotate(4.56rad);-o-transform:
+                     rotate(4.56rad);-ms-transform: rotate(4.56rad); transform: rotate(4.56rad);
+                     width: 0px; height: 24px; left: 312.41px; top: 108.62px;
+}
  #stuntwarped {position: relative; display: block; width:341px; height:103px;transform: translateY(37px);}
 
                      #stuntwarped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;

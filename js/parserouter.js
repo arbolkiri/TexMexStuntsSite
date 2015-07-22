@@ -43,10 +43,7 @@
             },
 
             Mark: function() {
-                var self = this
-                this.markview.render().then(function() {
-                    self.markview.videorender()
-                })
+
             },
             classes: function() {
                 var self = this
@@ -85,6 +82,10 @@
             },
               homepage: function() {
                 this.homeview.render();
+                var self = this
+                this.homeview.render().then(function() {
+                    self.homeview.videorender()
+                })
             },
             register: function() {
                 this.registerview.render();
@@ -97,7 +98,51 @@
 
         Parse.HomeView = Parse.TemplateView.extend({
             el: ".container",
-            view: "homepage"
+            view: "homepage",
+            markMenuPage: function(event) {
+                event.preventDefault();
+            },
+            videorender: function($) {
+
+                console.log(document.querySelector('#player'));
+
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                var player;
+
+                window.onYouTubeIframeAPIReady = function() {
+                    player = new YT.Player('player', {
+                        div: '#player',
+                        // height: '390',
+                        // width: '640',
+                        videoId: 'FKVbdVXcKs8',
+                        events: {
+                            onReady: 'onPlayerReady',
+                            onStateChange: 'onPlayerStateChange'
+                        }
+                    });
+                }
+
+                function onPlayerReady(event) {
+                    event.target.playVideo();
+                }
+                var done = false;
+
+                function onPlayerStateChange(event) {
+                    if (event.data == YT.PlayerState.PLAYING && !done) {
+                        setTimeout(stopVideo, 6000);
+                        done = true;
+                    }
+                }
+
+                function stopVideo() {
+                    player.stopVideo();
+                }
+                return player;
+            }
         })
 
         Parse.ClassModel = Parse.Object.extend({
@@ -154,51 +199,8 @@
 
     Parse.MarkMenuView = Parse.TemplateView.extend({
             el: ".container",
-            view: "mark",
-            markMenuPage: function(event) {
-                event.preventDefault();
-            },
-            videorender: function($) {
+            view: "homepage",
 
-                console.log(document.querySelector('#player'));
-
-                var tag = document.createElement('script');
-                tag.src = "https://www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                var player;
-
-                window.onYouTubeIframeAPIReady = function() {
-                    player = new YT.Player('player', {
-                        div: '#player',
-                        // height: '390',
-                        // width: '640',
-                        videoId: 'FKVbdVXcKs8',
-                        events: {
-                            onReady: 'onPlayerReady',
-                            onStateChange: 'onPlayerStateChange'
-                        }
-                    });
-                }
-
-                function onPlayerReady(event) {
-                    event.target.playVideo();
-                }
-                var done = false;
-
-                function onPlayerStateChange(event) {
-                    if (event.data == YT.PlayerState.PLAYING && !done) {
-                        setTimeout(stopVideo, 6000);
-                        done = true;
-                    }
-                }
-
-                function stopVideo() {
-                    player.stopVideo();
-                }
-                return player;
-            }
         })
 
     Parse.UserModel = Parse.Object.extend({

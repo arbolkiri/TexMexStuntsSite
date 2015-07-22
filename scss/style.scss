@@ -86,12 +86,7 @@ body {
     overflow-y: scroll;
     background: #333;
 }
-.splitlayout {
-    position: relative;
-    overflow-x: hidden;
-    min-height: 100%;
-    width: 100%;
-}
+
 .side {
      -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeIn 2s; /* Firefox < 16 */
@@ -111,23 +106,9 @@ body {
     to {opacity: 1;}
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left:0;
-    z-index: 499;
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-.side-left .overlay {
-    background: rgba(0,0,0,0.7);
-}
-.side-right .overlay {
-    background: rgba(0,0,0,0.3);
-}
+
 .side-left{
+    position: relative;
     background-image: url("../Images/Mark-Chavarria-motor.jpg");
     background-position-x: 100%;
     background-position-y: 100%;
@@ -135,6 +116,7 @@ body {
     background-repeat: no-repeat;
     left: 0;
     width: 100%;
+    height: 700px;
     color: white;
     // outline: 1px solid #47a3da;
 }
@@ -154,12 +136,12 @@ body {
     transform: translateY(-50%) translateX(-50%);
     font-family: Georgia, Times, Times New Roman, serif;
 }
-.intro-content.right{
-    margin-top: 49px;
-}
-.intro-content.left{
-    margin-top: 49px;
-}
+// .intro-content.right{
+//     margin-top: 49px;
+// }
+// .intro-content.left{
+//     margin-top: 49px;
+// }
 .map{
      transform: translate(0px, 35px);
 }
@@ -184,26 +166,6 @@ body {
     max-width: 500px;
 }
 
-// .intro-content > span{
-//     display: block;
-//     white-space: nowrap;
-//     color: white;
-//     font-size: 50px;
-// }
-
-
-// .intro-content h1 > span:first-child {
-//     // font-weight: 300;
-//     font-size: .7em;
-//     font-family: Tahoma, Geneva, sans-serif;
-// }
-// .intro-content h1 > span:nth-child(2){
-//     position: relative;
-//     margin-top: -0.5em;
-//     padding: 0.8em;
-//     text-transform: uppercase;
-//     letter-spacing: 1px;
-// }
 .stuntman{
     margin: 6px auto;
     font-family: Century Gothic;
